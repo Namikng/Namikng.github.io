@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "release build 때만 통신이 안된다면"
+date:   2018-02-11
+last_modified_at: 2022-12-12
+categories: [개발]
+tags: [Flutter]
+---
+
 debug build(안드로이드 스튜디오에서 run으로 실행하던)에서는 잘만 되던 통신이 release build에선 갑자기 안된다면?
 
 권한만 한줄 추가해주면 된다! 간단!
