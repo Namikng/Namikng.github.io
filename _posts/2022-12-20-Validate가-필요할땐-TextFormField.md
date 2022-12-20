@@ -8,7 +8,9 @@ tags: [Flutter]
 ---
 
 간단한 회원가입 페이지를 만들 일이 있었다. 그리고 나는 익숙한 TextField를 사용했다.
+
 그런데 Flutter in Action 책을 읽다가 사용자의 입력값을 Validate 해야하는 필드가 여러개 있다면
+
 **TextFormField**를 사용하는게 편하다는 것을 알게 되어 정리해본다!
 
 ## 단순한 TextField 대신 Form을 사용하면 좋은 점?
@@ -19,11 +21,14 @@ tags: [Flutter]
 ![스크린샷](https://namikng.github.io/assets/images/textFormField.gif)
 
 valid, invalid 경우 각각의 UI를 알아서 애니메이션까지 예쁘게 해준다!
+
 에러 메시지도 그냥 입력만 하면됨
 
 ## 기억할 점❗️
 그냥 TextFormField만 사용해도 validate는 되지만 그 입력값을 받아오려면
+
 **GlobalKey, Form** 위젯이 필요하다. 
+
 코드를 보자!
 
 ```dart
