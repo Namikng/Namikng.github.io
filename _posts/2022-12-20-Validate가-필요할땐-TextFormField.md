@@ -16,7 +16,7 @@ tags: [Flutter]
 - validate 후 에러 메시지 처리가 간단하다.
 - validate 할 때 레이아웃 처리를 알아서 예쁘게 해준다.
 
-![스크린샷](../../../assets/images/textFormField.gif)
+![스크린샷](https://namikng.github.io/assets/images/textFormField.gif)
 
 valid, invalid 경우 각각의 UI를 알아서 애니메이션까지 예쁘게 해준다!
 에러 메시지도 그냥 입력만 하면됨
