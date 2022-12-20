@@ -15,7 +15,7 @@ debug build(안드로이드 스튜디오에서 run으로 실행하던)에서는 
 
 `<uses-permission android:name="android.permission.INTERNET" />` 
 위 코드를 아래의 위치에 끼워넣어준다.
-```
+```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.company.appName">
     <uses-permission android:name="android.permission.INTERNET" /> 
