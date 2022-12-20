@@ -20,8 +20,8 @@ debug build(안드로이드 스튜디오에서 run으로 실행하던)에서는 
     package="io.company.appName">
     <uses-permission android:name="android.permission.INTERNET" /> 
    <application
-        android:label="appName"
-		...
+        android:label="appName"
+   ......
 ```
 이제 다시 실행해보면??
 release build도, apk로 추출해서 실행해도 잘된다😄
