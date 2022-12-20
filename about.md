@@ -1,8 +1,8 @@
-* * *
-
-## layout: page
-title: 자기 소개
+---
+layout: page
+title: 자기소개
 permalink: /about/
+---
 
 안녕하세요. 저는 **Flutter 앱개발자 강남이**입니다.
 저는요! 
