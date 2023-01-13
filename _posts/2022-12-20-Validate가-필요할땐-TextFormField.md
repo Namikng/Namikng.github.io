@@ -13,6 +13,8 @@ tags: [Flutter]
 
 **TextFormField**를 사용하는게 편하다는 것을 알게 되어 정리해본다!
 
+<br/>
+
 ## 단순한 TextField 대신 Form을 사용하면 좋은 점?
 - 모든 필드값을 한번에 처리할 수 있다.
 - validate 후 에러 메시지 처리가 간단하다.
@@ -23,6 +25,8 @@ tags: [Flutter]
 valid, invalid 경우 각각의 UI를 알아서 애니메이션까지 예쁘게 해준다!
 
 에러 메시지도 그냥 입력만 하면됨
+
+<br/>
 
 ## 기억할 점❗️
 그냥 TextFormField만 사용해도 validate는 되지만 그 입력값을 받아오려면
@@ -90,6 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
+<br/>
 
 
 
