@@ -36,8 +36,10 @@ language: ko
 
 analytics:   # the Google Analytics property ID, e.g. UA-XXXXX-Y
 
-paginate: 25
-paginate_path: "/page:num/"
+pagination:
+  per_page: 25
+  permalink: /page/:num/
+  limit: 0
 
 comments: false  # enable comments
 disqus:          # disqus account
