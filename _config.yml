@@ -37,8 +37,10 @@ language: ko
 analytics:   # the Google Analytics property ID, e.g. UA-XXXXX-Y
 
 pagination:
+  enabled: true
   per_page: 25
   permalink: /page/:num/
+  collection: 'posts'
   limit: 0
 
 comments: false  # enable comments
