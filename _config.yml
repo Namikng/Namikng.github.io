@@ -65,7 +65,7 @@ jekyll-archives:
 markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-archives
   - jekyll-seo-tag
