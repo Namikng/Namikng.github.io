@@ -2,7 +2,7 @@
 layout: post
 title:  "release build 때만 통신이 안된다면"
 date:   2022-12-12
-last_modified_at: 
+last_modified_at: 2022-12-12
 categories: [개발]
 tags: [Flutter]
 ---
