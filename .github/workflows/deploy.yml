@@ -3,6 +3,8 @@ name: Build & Deploy Jekyll site
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -17,7 +19,7 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    environment: github-pages
+    environment: ${{ github.ref == 'refs/heads/main' && 'github-pages' || '' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,7 +29,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.1"
+          ruby-version: "3.2"
           bundler-cache: true
 
       - name: Setup Pages
@@ -41,4 +43,5 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
+        if: github.ref == 'refs/heads/main'
         uses: actions/deploy-pages@v4
