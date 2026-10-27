@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/* ===== 다크 모드 CSS 변수 ===== */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #1a1a1a;
+  --text-secondary: #555555;
+  --border-color: #e0e0e0;
+  --code-bg: #f5f5f5;
+  --link-color: #0056b3;
+  --link-hover: #003d80;
+  --header-bg: #ffffff;
+  --footer-bg: #f8f9fa;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --highlight-bg: #fff;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #16213e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border-color: #2a2a4a;
+  --code-bg: #0f3460;
+  --link-color: #4da8da;
+  --link-hover: #7ec8e3;
+  --header-bg: #16213e;
+  --footer-bg: #16213e;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --highlight-bg: #0f3460;
+}
+
+/* ===== 다크 모드 토글 버튼 ===== */
+.theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 1000;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--text-primary);
+}
+
+/* ===== 다크 모드 적용 ===== */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container-wrapper {
+  background-color: var(--bg-primary);
+}
+
+.container-header {
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.container-footer {
+  background-color: var(--footer-bg);
+  border-top: 1px solid var(--border-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+/* 코드 블록 다크 모드 */
+.highlight {
+  background-color: var(--code-bg) !important;
+}
+
+.highlight pre {
+  background-color: var(--code-bg) !important;
+}
+
+/* 인라인 코드 */
+code {
+  background-color: var(--code-bg);
+  color: var(--text-primary);
+}
+
+/* 테이블 */
+table {
+  border-color: var(--border-color);
+}
+
+/* 입력 필드 */
+input, textarea {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+/* 수평선 */
+hr {
+  border-color: var(--border-color);
+}
+
+/* ===== 다크 모드 미디어 쿼리 (시스템 설정 연동) ===== */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --border-color: #2a2a4a;
+    --code-bg: #0f3460;
+    --link-color: #4da8da;
+    --link-hover: #7ec8e3;
+    --header-bg: #16213e;
+    --footer-bg: #16213e;
+    --shadow: rgba(0, 0, 0, 0.3);
+    --highlight-bg: #0f3460;
+  }
+}

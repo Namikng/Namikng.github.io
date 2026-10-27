@@ -27,3 +27,21 @@
   line-height: 24px;
   margin: 0 10px;
 }
+
+/* 다크 모드 토글 버튼 */
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 100;
+}
+
+.theme-toggle svg {
+  width: 22px;
+  height: 22px;
+  fill: var(--text-primary, #333);
+}
