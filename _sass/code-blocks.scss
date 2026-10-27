@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* ===== 코드 블록 복사 버튼 ===== */
+.highlight {
+  position: relative;
+}
+
+.highlight pre {
+  position: relative;
+  padding-top: 2.5em;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--highlight-bg, #fff);
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  color: var(--text-primary, #333);
+  z-index: 10;
+}
+
+.copy-btn:hover {
+  opacity: 1;
+}
+
+.copy-btn.copied {
+  background: #28a745;
+  color: white;
+  border-color: #28a745;
+  opacity: 1;
+}
+
+/* 인라인 코드 */
+code {
+  background-color: var(--code-bg, #f5f5f5);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
