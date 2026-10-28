@@ -22,3 +22,61 @@
 <script src="/assets/script/jekyllpaper.js" async ></script>
 <script src="https://unpkg.com/mermaid@8.5.1/dist/mermaid.min.js" onload="javascript:loadMermaid();" async></script>
 {% endif %}
+<script>
+(function() {
+  const toggle = document.getElementById('themeToggle');
+  const icon = document.getElementById('themeIcon');
+  if (!toggle) return;
+  const key = 'namikng-theme';
+  const saved = localStorage.getItem(key);
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  let theme = saved || (prefersDark ? 'dark' : 'light');
+  function apply(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    if (!icon) return;
+    if (theme === 'dark') {
+      icon.innerHTML = '<path d="M10 2c-1.82 0-3.53.5-5 1.35C7.99 5.08 10 8.3 10 12s-2.01 6.92-5 8.65C6.47 21.5 8.18 22 10 22c5.52 0 10-4.48 10-10S15.52 2 10 2z"/>';
+    } else {
+      icon.innerHTML = '<path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/>';
+    }
+  }
+  apply(theme);
+  toggle.addEventListener('click', function() {
+    theme = theme === 'dark' ? 'light' : 'dark';
+    apply(theme);
+    localStorage.setItem(key, theme);
+  });
+})();
+</script>
+<script>
+(function() {
+  function addCopyButtons() {
+    document.querySelectorAll('.highlight pre').forEach(function(pre) {
+      if (pre.querySelector('.copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'copy-btn';
+      btn.textContent = '복사';
+      btn.addEventListener('click', function() {
+        var range = document.createRange();
+        range.selectNode(pre);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        btn.textContent = '완료!';
+        btn.classList.add('copied');
+        setTimeout(function() {
+          btn.textContent = '복사';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+      pre.appendChild(btn);
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', addCopyButtons);
+  } else {
+    addCopyButtons();
+  }
+})();
+</script>

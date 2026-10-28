@@ -16,6 +16,10 @@ layout: default
     <div class="post-date">
       {{ site.data.lang[site.language].post_write_date }}{{ page.date | date: "%Y-%m-%d" }}{% if page.last_modified_at %}, {{ site.data.lang[site.language].post_update_date }}{{ page.last_modified_at | date: "%Y-%m-%d" }}{% endif %}.
     </div>
+    {% assign reading_time = page.content | number_of_words | divided_by: 200 | round | at_least: 1 %}
+    <div class="post-reading-time">
+      읽기 시간: 약 {{ reading_time }}분
+    </div>
     <div class="post-categories">
       <span>{{ site.data.lang[site.language].post_categories }}</span>
       {% for category in page.categories %}
