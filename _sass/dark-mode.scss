@@ -140,3 +140,82 @@ hr {
     --highlight-bg: #0f3460;
   }
 }
+
+/* ===== 다크 모드 구문 강조 색상 ===== */
+[data-theme="dark"] .highlight {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .highlight .w { color: #777; }
+[data-theme="dark"] .highlight .err { color: #fefeec; background-color: #c00; }
+[data-theme="dark"] .highlight .x { color: #e0e0e0; }
+[data-theme="dark"] .highlight .k { color: #c678dd; }
+[data-theme="dark"] .highlight .kc { color: #c678dd; }
+[data-theme="dark"] .highlight .kd { color: #c678dd; }
+[data-theme="dark"] .highlight .kn { color: #e5c07b; }
+[data-theme="dark"] .highlight .kp { color: #e5c07b; }
+[data-theme="dark"] .highlight .kr { color: #e5c07b; }
+[data-theme="dark"] .highlight .kt { color: #e5c07b; }
+[data-theme="dark"] .highlight .n { color: #e0e0e0; }
+[data-theme="dark"] .highlight .na { color: #61afef; }
+[data-theme="dark"] .highlight .nb { color: #e5c07b; }
+[data-theme="dark"] .highlight .bp { color: #e0e0e0; }
+[data-theme="dark"] .highlight .nc { color: #e5c07b; }
+[data-theme="dark"] .highlight .no { color: #e5c07b; }
+[data-theme="dark"] .highlight .nd { color: #e5c07b; }
+[data-theme="dark"] .highlight .ne { color: #e5c07b; }
+[data-theme="dark"] .highlight .nf { color: #61afef; }
+[data-theme="dark"] .highlight .py { color: #61afef; }
+[data-theme="dark"] .highlight .nl { color: #e5c07b; }
+[data-theme="dark"] .highlight .nn { color: #e5c07b; }
+[data-theme="dark"] .highlight .nx { color: #e0e0e0; }
+[data-theme="dark"] .highlight .nt { color: #e5c07b; }
+[data-theme="dark"] .highlight .nv { color: #61afef; }
+[data-theme="dark"] .highlight .vc { color: #61afef; }
+[data-theme="dark"] .highlight .vg { color: #61afef; }
+[data-theme="dark"] .highlight .vi { color: #61afef; }
+[data-theme="dark"] .highlight .l { color: #e0e0e0; }
+[data-theme="dark"] .highlight .ld { color: #d19a66; }
+[data-theme="dark"] .highlight .s { color: #98c379; }
+[data-theme="dark"] .highlight .sb { color: #98c379; }
+[data-theme="dark"] .highlight .sc { color: #98c379; }
+[data-theme="dark"] .highlight .sd { color: #98c379; }
+[data-theme="dark"] .highlight .s2 { color: #98c379; }
+[data-theme="dark"] .highlight .se { color: #98c379; }
+[data-theme="dark"] .highlight .sh { color: #98c379; }
+[data-theme="dark"] .highlight .si { color: #98c379; }
+[data-theme="dark"] .highlight .sx { color: #98c379; }
+[data-theme="dark"] .highlight .sr { color: #98c379; }
+[data-theme="dark"] .highlight .s1 { color: #98c379; }
+[data-theme="dark"] .highlight .ss { color: #d19a66; }
+[data-theme="dark"] .highlight .m { color: #d19a66; }
+[data-theme="dark"] .highlight .mf { color: #d19a66; }
+[data-theme="dark"] .highlight .mh { color: #d19a66; }
+[data-theme="dark"] .highlight .mi { color: #d19a66; }
+[data-theme="dark"] .highlight .il { color: #d19a66; }
+[data-theme="dark"] .highlight .mo { color: #d19a66; }
+[data-theme="dark"] .highlight .mx { color: #d19a66; }
+[data-theme="dark"] .highlight .mb { color: #d19a66; }
+[data-theme="dark"] .highlight .o { color: #56b6c2; }
+[data-theme="dark"] .highlight .ow { color: #56b6c2; }
+[data-theme="dark"] .highlight .p { color: #abb2bf; }
+[data-theme="dark"] .highlight .c { color: #5c6370; font-style: italic; }
+[data-theme="dark"] .highlight .cm { color: #5c6370; font-style: italic; }
+[data-theme="dark"] .highlight .cp { color: #5c6370; font-style: italic; font-weight: bold; }
+[data-theme="dark"] .highlight .c1 { color: #5c6370; font-style: italic; }
+[data-theme="dark"] .highlight .cs { color: #5c6370; font-style: italic; }
+[data-theme="dark"] .highlight .g { color: #e0e0e0; }
+[data-theme="dark"] .highlight .gd { color: #c00; }
+[data-theme="dark"] .highlight .ge { font-style: italic; }
+[data-theme="dark"] .highlight .gr { color: #c00; font-style: italic; font-weight: bold; }
+[data-theme="dark"] .highlight .gh { color: #e5c07b; font-weight: bold; }
+[data-theme="dark"] .highlight .gi { color: #28a745; }
+[data-theme="dark"] .highlight .go { color: #abb2bf; }
+[data-theme="dark"] .highlight .gp { color: #e0e0e0; font-weight: bold; }
+[data-theme="dark"] .highlight .gs { font-weight: bold; }
+[data-theme="dark"] .highlight .gu { color: #e5c07b; font-weight: bold; }
+[data-theme="dark"] .highlight .gt { color: #dee5e7; background-color: #4e5d62; }
+[data-theme="dark"] .highlight .gl { color: #5f6a6d; }
+[data-theme="dark"] .highlight .cd { color: #5c6370; font-style: italic; }
+[data-theme="dark"] .highlight .kv { color: #c678dd; font-weight: bold; }
+[data-theme="dark"] .highlight .pi { color: #56b6c2; }
