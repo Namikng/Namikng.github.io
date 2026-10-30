@@ -83,12 +83,12 @@ body {
   border-top: 1px solid var(--border-color);
 }
 
-a {
-  color: var(--link-color);
+[data-theme="dark"] a {
+  color: #abb2bf;
 }
 
-a:hover {
-  color: var(--link-hover);
+[data-theme="dark"] a:hover {
+  color: #e0e0e0;
 }
 
 /* 코드 블록 다크 모드 */
